@@ -22,10 +22,12 @@ body {
 .header-body li {
   margin-right: 20px;
   cursor: pointer;
+  transition: color 0.3s; /* Added smooth color transition */
 }
 
 .header-body li:hover {
   text-decoration: underline;
+  color: #ffcccb; /* Change color on hover for better visibility */
 }
 
 /* Master-Detail Layout */
@@ -33,6 +35,7 @@ body {
   display: flex;
 }
 
+/* Email List Styles */
 .email-list {
   width: 40%;
   background-color: #fff;
@@ -40,11 +43,51 @@ body {
   padding: 10px;
   height: 100vh;
   overflow-y: auto;
+  display: flex; /* Use flexbox for email items */
+  flex-direction: column; /* Stack email items vertically */
 }
 
+/* Email Body Styles */
 .email-body {
   width: 60%;
   padding: 20px;
+  background-color: #ffffff; /* Ensured background is white */
+  display: flex; /* Use flexbox for layout */
+}
+
+/* Banner Section */
+.banner.full-body {
+  display: flex; /* Use flexbox for layout */
+  margin-top: 20px; /* Space above the banner */
+}
+
+/* Left Image Section */
+.left-head {
+  flex: 0 0 20%; /* Fixed width of 20% */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.circle {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Make it a circle */
+  border-radius: 50%; /* Create a circle */
+  background-color: #E54065; /* Circle background color */
+  color: white; /* Text color */
+  display: flex; /* Flexbox for centering text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  font-size: 24px; /* Font size for the letter */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center text */
+}
+
+/* Subject Body Section */
+.subject-body {
+  flex: 1; /* Take the remaining space (80%) */
+  padding: 20px; /* Padding for inner content */
+  background-color: #ffffff; /* Background color for content area */
 }
 
 /* Email Item */
@@ -52,6 +95,8 @@ body {
   padding: 15px;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background transition */
+  display: flex; /* Use flexbox for email item */
 }
 
 .email-item.unread {
@@ -61,6 +106,10 @@ body {
 
 .email-item.read {
   background-color: #fff;
+}
+
+.email-item:hover {
+  background-color: #f0f0f0; /* Highlight email item on hover */
 }
 
 .email-item .date {
@@ -84,12 +133,14 @@ body {
   line-height: 1.6;
 }
 
+/* Favorite Button */
 .favorite-btn {
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background transition */
 }
 
 .favorite-btn:hover {

@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 =======
 # email-clone
->>>>>>> 1675a48348d0a2e5ca40562a6f80f8fc9f9a81b3
+

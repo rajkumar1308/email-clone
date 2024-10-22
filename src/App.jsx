@@ -28,7 +28,7 @@ const handleEmailClick = async (id) => {
   try {
     const res = await fetch(`${API}?id=${id}`);
     const emailDetail = await res.json();
-    console.log(emailDetail); // Log the response to check the structure
+   
 
     if (emailDetail) {
       setSelectedEmail({ ...emailDetail, id });

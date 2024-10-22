@@ -10,7 +10,7 @@ body {
 .header-body {
   background-color: #E54065;
   color: white;
-  padding: 15px;
+  padding: 16px;
 }
 
 .header-body ul {
@@ -20,7 +20,7 @@ body {
 }
 
 .header-body li {
-  margin-right: 20px;
+  margin-right: 22px;
   cursor: pointer;
   transition: color 0.3s; /* Added smooth color transition */
 }
